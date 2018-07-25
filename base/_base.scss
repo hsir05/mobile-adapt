@@ -1,0 +1,71 @@
+// base by fungleo
+html {}
+body {
+  color: $BaseC;line-height: 1;
+   font-family:'PingFang SC', 'Heiti SC', 'Droidsansfallback', Helvetica, 'Droid Sans';
+}
+// html,body {overflow: hidden;}
+.block {display: block;}
+.none {display:none}
+.clear {clear: both;}
+
+.fl {float: left;}
+.fr {float: right;}
+.tl {text-align: left;}
+.tr {text-align: right;}
+.tc {text-align: center;}
+
+
+// 文字颜色
+.c55{color: $c55;}
+.c22{color: $c22;}
+.c99{color: $c99;}
+.c00{color: $c00;}
+.cff{color: $cff;}
+.cdd{color: $cdd;}
+.cee{color: $cee;}
+.cf9{color: $cf9;}
+.cfa{color: $cfa;}
+.cf60{color: $cf60;}
+.red{color: $red;}
+.blue{color: $blue;}
+.green{color: $green;}
+.cyan{color: $cyan;}
+.gold{color: $gold;}
+.pink{color: $pink;}
+.yellow{color: $yellow;}
+
+// 背景颜色
+
+.bg_c55{background-color: $c55;}
+.bg_c22{background-color: $c22;}
+.bg_c99{background-color: $c99;}
+.bg_c00{background-color: $c00;}
+.bg_cff{background-color: $cff;}
+.bg_cdd{background-color: $cdd;}
+.bg_cee{background-color: $cee;}
+.bg_cf9{background-color: $cf9;}
+.bg_cfa{background-color: $cfa;}
+.bg_cf60{background-color: $cf60;}
+.bg_red{background-color: $red;}
+.bg_blue{background-color: $blue;}
+.bg_green{background-color: $green;}
+.bg_cyan{background-color: $cyan;}
+.bg_gold{background-color: $gold;}
+.bg_pink{background-color: $pink;}
+.bg_yellow{background-color: $yellow;}
+
+.cf{
+	zoom:1;
+	&:before,&:after {content:"";display:table;}
+	&:after {clear:both;}
+}
+
+%before {
+	display: block;content: "";position: absolute;
+}
+
+.fbg {
+  position: fixed;left: 0;top: 0;right: 0;bottom: 0;
+  background: rgba($c00,.5);z-index: 10;
+}

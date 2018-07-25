@@ -1,0 +1,12 @@
+// .outer {
+//   position: fixed;width: rem(720);
+//   top: 0;bottom: 0;left: 50%;margin-left: rem(-720/2);
+//   overflow-y: auto;-webkit-overflow-scrolling : touch;
+// }
+.outer {
+  width: rem(720);
+  margin: 0 auto;min-height: 100vh;
+  background: $cf4;
+  overflow-x: hidden;
+  @extend .cf;
+}
