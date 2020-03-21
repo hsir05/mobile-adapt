@@ -53,3 +53,31 @@ var scale = window.innerWidth / designWidth； //计算当前屏幕的宽度与�
 // 根据屏幕宽度 动态计算根元素的 字体大小
 document.documentElement.style.fontSize = scale*remPx + 'px';
 ```
+
+## 4. lib-flexible
+
+1. npm install --save lib-flexible
+
+2. npm install --save px2rem-loader
+
+3.build 文件夹下的 utils.js 中修改配置
+
+```javascript
+const cssLoader = {
+  loader: 'css-loader',
+  options: {
+    minimize:process.env.NODE_EVN==='production',
+    sourceMap: options.sourceMap
+  }
+}
+const px2remLoader={
+    loader:'px2rem-loader',
+    options:{
+      remUnit:37.5　　//根据设计稿设置，375px设计稿=37.5,   750px设计稿=75 
+    }
+}
+
+function generateLoaders (loader, loaderOptions) {
+  const loaders = options.usePostCSS ? [cssLoader, postcssLoader,px2remLoader] : [cssLoader,px2remLoader]
+开发单位单位使用px，运行后，会自动转成rem。
+```
