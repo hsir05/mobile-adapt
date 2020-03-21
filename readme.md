@@ -43,3 +43,13 @@ document.documentElement.style.fontSize = deviceWidth / 6.4 + 'px';  // 注意�
 @media screen and (min-width: 800px) {html{font-size:125px;}}
 @media screen and (min-width: 960px) {html{font-size:150px;}}
 ```
+
+## 3. JS配合修改配合rem适配
+
+```javascript
+var designWidth = 375;  		// 设计稿宽度
+var remPx = 100;               // 在屏幕宽度375px，的时候，设置根元素字体大小 100px
+var scale = window.innerWidth / designWidth； //计算当前屏幕的宽度与设计稿比例
+// 根据屏幕宽度 动态计算根元素的 字体大小
+document.documentElement.style.fontSize = scale*remPx + 'px';
+```
